@@ -152,7 +152,7 @@ header a:hover{
 
 
 section h2{
-    margin: 25px;
+    margin: 10px;    
 }
 
 section p{
@@ -210,8 +210,7 @@ footer div{
     justify-content: flex-end;
 }
 
-footer div img{    
-    margin: 25px;
+footer div img{        
     height: 50px;
     width: 50px; 
 }
@@ -274,7 +273,7 @@ footer div img{
     color: white;
 }
 
-section p{
+section p{    
     text-align: justify;
 }
 
@@ -325,6 +324,144 @@ section p{
 .equipo div img{    
     height: 90%;
     width: 90%;
+}
+
+/*-----------SERVICIOS------------*/
+
+.servicios{
+    margin: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    height: 1000px;    
+}
+
+.carrusel-servicios{
+    height: 400px;
+}
+
+.carrusel-servicios div{    
+    width: 600px;
+}
+
+.hero-servicios{    
+    margin: 25px;
+    display: flex;
+    flex-direction: row;
+    align-items:flex-start;    
+}
+
+.hero-servicios div{
+    margin: 10px;
+}
+
+/*--------animaciones-servicios----*/
+
+.delivery{    
+    height: 100px;
+    background-color: rgba(255, 255, 255, 0.199);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    transition-property: height;  
+    transition-duration: 1s; 
+}
+
+.delivery h2{
+    padding: 15px;
+}
+
+.delivery div p{
+    color: white;
+}
+
+.delivery h2{
+    padding: 15px;
+}
+
+.delivery:hover{
+    height: 160px;    
+}
+
+.delivery div p{        
+    margin: 0;
+    font-size: 100%;
+    text-align: center;
+    color: transparent;
+}
+
+.delivery div p:hover{
+    color: white;
+}
+
+.delivery:hover{
+    background-color: #f7b8171f;
+}
+
+.takeaway{    
+    height: 100px;
+    background-color: rgba(255, 255, 255, 0.199);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    transition-property: height;  
+    transition-duration: 1s;
+}
+
+.takeaway h2{
+    padding: 15px;
+}
+
+.takeaway:hover{
+    height: 160px;    
+}
+
+.takeaway div p{        
+    margin: 0;
+    font-size: 100%;
+    text-align: center;
+    color: transparent;
+}
+
+.takeaway div p:hover{
+    color: white;
+}
+
+.takeaway:hover{
+    background-color: #f7b81711;
+}
+
+.ventas{    
+    height: 100px;
+    background-color: rgba(255, 255, 255, 0.199);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    transition-property: height;  
+    transition-duration: 1s;    
+}
+
+.ventas h2{
+    padding: 15px;
+}
+
+.ventas div p{        
+    margin: 0;
+    font-size: 100%;
+    text-align: center;
+    color: transparent;
+}
+.ventas:hover{
+    height: 160px;    
+}
+
+.ventas:hover{
+    background-color: #f7b81711;
+}
+
+.ventas div p:hover{
+    color: white;
 }
 
 
