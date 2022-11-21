@@ -123,6 +123,10 @@ header nav ul li{
 
 /*-------------MAIN-INDEX--------------*/
 
+.contenido{
+    margin-bottom: 50px;
+}
+
 .hero{    
     margin: 100px;
     display: flex;
@@ -142,6 +146,7 @@ header nav ul li{
     align-items: center;
 }
 
+
 section h2{
     margin: 25px;
 }
@@ -151,6 +156,11 @@ section p{
     width: 90%;    
     font-size: 20px;
     text-align: center;   
+}
+
+.carousel{
+    height: 300px;
+    width: 450px;
 }
 
 .boton-ver{
