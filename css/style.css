@@ -162,6 +162,27 @@ section p{
     text-align: center;   
 }
 
+.carousel{    
+    width: 300px;
+}
+
+@media (min-width: 760px){ 
+    .carousel{    
+        width: 350px;
+    }
+}
+
+@media (min-width: 860px){ 
+    .carousel{    
+        width: 400px;
+    }
+}
+
+@media (min-width: 960px){ 
+    .carousel{    
+        width: 500px;
+    }
+}
 
 
 .boton-ver{
@@ -328,6 +349,7 @@ section p{
 
 /*-----------SERVICIOS------------*/
 
+
 .servicios{
     margin: 30px;
     display: flex;
@@ -337,13 +359,6 @@ section p{
     height: auto;    
 }
 
-.carrusel-servicios{
-    height: 400px;
-}
-
-.carrusel-servicios div{    
-    width: 100%;
-}
 
 .hero-servicios{    
     margin: 25px;
