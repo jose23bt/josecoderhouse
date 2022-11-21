@@ -162,10 +162,7 @@ section p{
     text-align: center;   
 }
 
-.carousel{
-    height: 300px;
-    width: 450px;
-}
+
 
 .boton-ver{
     display: flex;
@@ -183,15 +180,15 @@ section p{
 /*------------FOOTER-INDEX---------*/
 
 footer{           
-    background-color: rgba(255, 228, 196, 0.082);
+    background-color: rgba(255, 255, 255, 0.082);
     display: flex;    
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center; 
     font-family: 'Poiret One', cursive;          
 }
 
 
-footer nav ul li a{
+footer div ul li a{
     padding: 10px;
     display: flex;
     flex-direction: column;
@@ -200,7 +197,7 @@ footer nav ul li a{
     color: white;
 }
 
-footer nav ul{
+footer div ul{
     list-style: none;
 
 }
@@ -326,6 +323,9 @@ section p{
     width: 90%;
 }
 
+
+
+
 /*-----------SERVICIOS------------*/
 
 .servicios{
@@ -334,7 +334,7 @@ section p{
     flex-direction: column;
     justify-content: flex-start;
     align-items: center;
-    height: 1000px;    
+    height: auto;    
 }
 
 .carrusel-servicios{
@@ -342,13 +342,13 @@ section p{
 }
 
 .carrusel-servicios div{    
-    width: 600px;
+    width: 100%;
 }
 
 .hero-servicios{    
     margin: 25px;
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     align-items:flex-start;    
 }
 
@@ -356,15 +356,24 @@ section p{
     margin: 10px;
 }
 
+@media (min-width: 800px){
+    .hero-servicios{    
+        margin: 25px;
+        display: flex;
+        flex-direction: row;
+        align-items:flex-start;    
+    }
+}
+
 /*--------animaciones-servicios----*/
 
 .delivery{    
-    height: 100px;
+    height: 270px;
     background-color: rgba(255, 255, 255, 0.199);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
-    transition-property: height;  
+    transition-property: background-color;  
     transition-duration: 1s; 
 }
 
@@ -380,19 +389,11 @@ section p{
     padding: 15px;
 }
 
-.delivery:hover{
-    height: 160px;    
-}
 
 .delivery div p{        
     margin: 0;
     font-size: 100%;
-    text-align: center;
-    color: transparent;
-}
-
-.delivery div p:hover{
-    color: white;
+    text-align: center;    
 }
 
 .delivery:hover{
@@ -400,46 +401,47 @@ section p{
 }
 
 .takeaway{    
-    height: 100px;
+    height: 270px;
     background-color: rgba(255, 255, 255, 0.199);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
-    transition-property: height;  
+    transition-property: background-color;  
     transition-duration: 1s;
+}
+
+.takeaway div p{
+    color: white;
 }
 
 .takeaway h2{
     padding: 15px;
 }
 
-.takeaway:hover{
-    height: 160px;    
-}
 
 .takeaway div p{        
     margin: 0;
     font-size: 100%;
-    text-align: center;
-    color: transparent;
+    text-align: center;    
 }
 
-.takeaway div p:hover{
-    color: white;
-}
 
 .takeaway:hover{
     background-color: #f7b81711;
 }
 
 .ventas{    
-    height: 100px;
+    height: 270px;
     background-color: rgba(255, 255, 255, 0.199);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
-    transition-property: height;  
+    transition-property: background-color;  
     transition-duration: 1s;    
+}
+
+.ventas div p{
+    color: white;
 }
 
 .ventas h2{
@@ -449,11 +451,7 @@ section p{
 .ventas div p{        
     margin: 0;
     font-size: 100%;
-    text-align: center;
-    color: transparent;
-}
-.ventas:hover{
-    height: 160px;    
+    text-align: center;    
 }
 
 .ventas:hover{
