@@ -157,7 +157,7 @@ section h2{
 }
 
 section p{
-    padding: 25px;
+    /*padding: 25px;*/
     width: 90%;    
     font-size: 20px;
     text-align: center;   
@@ -303,6 +303,10 @@ section p{
     display: flex;
     flex-direction: column;
     align-items: center;
+}
+
+.introduccion-nosotros p{
+
 }
 
 .introduccion-nosotros h2 img{
@@ -719,15 +723,14 @@ section p{
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center;
-    margin: 20px;
+    align-items: center;    
     text-align: center;
     text-decoration: none;
-    color: white;
+    color: white;    
 }
 
 .contenido-contacto p{
-    width: 50%;
+    width: 80%;
     margin: 20px;
 }
 
@@ -813,7 +816,7 @@ textarea{
 
 .direccion div{
     box-sizing: border-box;
-    width: 40%;
+    width: 80%;
     height: 25%;
 }
 
