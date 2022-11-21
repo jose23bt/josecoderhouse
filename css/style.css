@@ -28,7 +28,7 @@ header div{
 }
 
 header div img{
-    width: 30%;
+    width: 54%;    
     margin: 25px;
 }
 
@@ -64,6 +64,7 @@ header nav ul li{
     font-size: 25px;    
 }
 
+
 @media (min-width: 760px){
     header nav ul{    
         padding: 10px;
@@ -74,6 +75,14 @@ header nav ul li{
         align-items: center; 
         flex-wrap: nowrap;    
     }
+}
+
+@media (min-width: 760px){
+    header div img{
+        width: 400px;
+        margin: 25px;
+    }
+
 }
 
 
@@ -232,9 +241,13 @@ footer div img{
     font-family: 'Poiret One', cursive;
 }
 
-.introduccion-nosotros{
+.introduccion-nosotros{    
     text-decoration: none;
     color: white;
+}
+
+section p{
+    text-align: justify;
 }
 
 /*------------MAIN-NOSOTROS-----------*/
