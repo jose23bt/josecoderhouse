@@ -64,6 +64,10 @@ header nav ul li{
     font-size: 25px;    
 }
 
+header a:hover{
+    color: #f7b817;
+}
+
 
 @media (min-width: 760px){
     header nav ul{    
@@ -208,8 +212,22 @@ footer div{
 
 footer div img{    
     margin: 25px;
-    height: 10%;
-    width: 10%; 
+    height: 50px;
+    width: 50px; 
+}
+
+.redes-sociales img{
+    display: block;
+}
+
+.redes-sociales img:hover{    
+    width: 55px;
+    height: 55px;
+}
+
+.menu-pie a:hover{    
+    color: #f7b817;
+    
 }
 
 /*-----------------CSS-NOSOTROS----------------*/
