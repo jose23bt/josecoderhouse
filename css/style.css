@@ -144,6 +144,7 @@ header a:hover{
 }
 
 .introduccion{    
+
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -156,7 +157,7 @@ section h2{
 }
 
 section p{
-    margin: 25px;
+    padding: 25px;
     width: 90%;    
     font-size: 20px;
     text-align: center;   
@@ -298,7 +299,7 @@ section p{
 /*------------MAIN-NOSOTROS-----------*/
 
 .introduccion-nosotros{
-    margin: 80px;
+    margin: 35px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -310,7 +311,31 @@ section p{
 }
 
 .introduccion-nosotros p{
-    font-size: 30px;
+    font-size: 20px;
+}
+
+@media (min-width: 400px){ 
+    .introduccion-nosotros p{
+        font-size: 25px;
+    }
+}
+
+@media (min-width: 500px){ 
+    .introduccion-nosotros p{
+        font-size: 30px;
+    }
+}
+
+@media (min-width: 600px){ 
+    .introduccion-nosotros p{
+        font-size: 35px;
+    }
+}
+
+@media (min-width: 700px){ 
+    .introduccion-nosotros p{
+        font-size: 40px;
+    }
 }
 
 
