@@ -263,7 +263,7 @@ section p{
 /*------------MAIN-NOSOTROS-----------*/
 
 .introduccion-nosotros{
-    margin: 100px;
+    margin: 80px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -301,20 +301,12 @@ section p{
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center; 
+    align-items: center;     
 }
 
-
-.equipo div p{
-    font-size: 25px;    
-    height: 50%;
-    width: 50%;
-}
-
-.equipo div img{
-    margin: 5PX auto;
-    height: 50%;
-    width: 50%;
+.equipo div img{    
+    height: 90%;
+    width: 90%;
 }
 
 
