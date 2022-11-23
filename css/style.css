@@ -19,65 +19,177 @@ body{
 
 
 /*----------------HEADER-INDEX--------------*/
-/*---------------CSS-INDEX-NAV---------------*/
 
-header div{
+/*------- BARRA DE NAVEGACION Y LOGO -------*/
+
+.logo-vertical img{
+    width: 70%;
+    border-radius: 40px;
+}
+
+.logo-horizontal img{
+    width: 50%;
+    border-radius: 20px;
+}
+
+.logo-vertical{
     display: flex;
     justify-content: center;
-    align-items: center;
+    margin-top: 30px;
 }
 
-header div img{
-    width: 54%;    
-    margin: 25px;
+@media (min-width: 760px){
+    .logo-vertical{
+        display: none;        
+    }
 }
 
-header{
-    padding: 5px;
+.logo-horizontal{
+    display: none;
+}
+
+@media (min-width: 760px){
+    .logo-horizontal{
+        display: flex;
+        justify-content: center;
+        margin-top: 30px;
+    }
+}
+
+
+.fa-sharp{
+    text-align: center;
+    font-size: 30px  ;
+    color: rgb(255, 255, 255);
+    padding-top: 20px;
+    padding-bottom: 20px; 
+    
+}
+
+
+@media (min-width: 760px){
+    .fa-sharp{
+        display: none;
+        text-align: center;
+        font-size: 30px  ;
+        color: transparent;
+        padding-top: 20px;
+        padding-bottom: 20px;
+        
+    }    
+}
+
+.navbar{
+    display: flex;
+    flex-direction: column;
+    background-color: rgba(255, 228, 196, 0.082); 
+    width: 70%;  
+    flex-wrap: nowrap;
+    border-radius: 8px;       
+}
+
+@media (min-width: 760px){
+    .navbar{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        justify-content: center;        
+        background-color: rgba(255, 228, 196, 0.082); 
+        width: 70%;  
+    }
+    
+}
+
+header{  
+    display: flex;        
+    justify-content: center;    
+    margin-top: 25px;      
     width: 100%;
-    background-color: rgba(255, 228, 196, 0.082);
+    height: 80px;
+    overflow: hidden;    
+    transition-property: height;  
+    transition-duration: 1s;  
+}
+
+header:hover{
+    height: 400px;
+}
+
+@media (min-width: 760px){
+    header:hover{
+        height: 80px;
+    }    
 }
 
 header h1{    
     text-align: center;
     font-size: 60px;
-    padding: 10px;       
+    padding: 60px;       
 }
 
-header nav ul{    
-    padding: 5px;
-    list-style: none;  
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;  
-    align-items: center; 
-    flex-wrap: nowrap; 
-}
 
 header a{
-    text-decoration: none;
-    color: aliceblue;
+    text-decoration: none;    
+    color: aliceblue;    
 }
 
+
 header nav ul li{
-    margin: 10px;
-    font-size: 25px;    
+    margin: 15px;
+    font-size: 20px;    
 }
+
+@media (min-width: 760px){
+    header nav ul li{
+        margin: 15px;
+        font-size: 15px;    
+    } 
+}
+
+@media (min-width: 770px){
+    header nav ul li{
+        margin: 15px;
+        font-size: 16px;    
+    } 
+}
+
+@media (min-width: 780px){
+    header nav ul li{
+        margin: 15px;
+        font-size: 19px;    
+    } 
+}
+
+
+@media (min-width: 830px){
+    header nav ul li{
+        margin: 15px;
+        font-size: 20px;    
+    } 
+}
+
 
 header a:hover{
     color: #f7b817;
+    font-size: 20.3px;
+    transition-property: color;  
+    transition-duration: 0.8s;
 }
 
+header nav ul{            
+    list-style: none;  
+    display: flex;
+    align-items: center;
+    flex-direction: column;      
+    margin-bottom: 0px; 
+    padding-left: 0px;   
+}
 
 @media (min-width: 760px){
-    header nav ul{    
-        padding: 10px;
+    header nav ul{            
         list-style: none;  
         display: flex;
-        flex-direction: row;        
-        justify-content: space-around;  
-        align-items: center; 
-        flex-wrap: nowrap;    
+        flex-direction: row;      
     }
 }
 
@@ -88,6 +200,19 @@ header a:hover{
     }
 
 }
+
+@media (min-width: 760px){
+    header{
+        display: flex;
+        justify-content: center;
+        margin-top: 25px;            
+        width: 100%;
+        height: 80px;
+        overflow: hidden;         
+}
+}
+
+/*-----FIN BARRA DE NAVEGACION ----*/
 
 
 /*-------------DIV-CONTENEDOR-INDEX------------*/
@@ -106,8 +231,7 @@ header a:hover{
 
 /*--------------GRID-AREAS-INDEX--------------*/
 
-.encabezado{
-    background-color: rgba(255, 255, 255, 0.096);
+.encabezado{    
     grid-area: header;    
 }
 
@@ -132,15 +256,14 @@ header a:hover{
 }
 
 .hero{    
-    margin: 100px;
+    margin: 50px;
     display: flex;
     align-items: center;
     justify-content: center;
 }
 
-.hero img{
-    height: 70%;
-    width: 70%;
+.hero img{   
+    width: 100%;
 }
 
 .introduccion{    
@@ -167,6 +290,15 @@ section p{
     width: 300px;
 }
 
+@media (min-width: 760px){
+    .hero img{
+        width: 70%;
+    }
+    .hero{    
+        margin: 100px;          
+    }
+}
+
 @media (min-width: 760px){ 
     .carousel{    
         width: 350px;
@@ -183,19 +315,6 @@ section p{
     .carousel{    
         width: 500px;
     }
-}
-
-
-.boton-ver{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: rgba(255, 255, 255, 0.226);
-    width: 300px;
-    height: 80px;
-    color: #f7b817;
-    font-size: 50px;    
-    
 }
 
 
@@ -305,10 +424,6 @@ section p{
     align-items: center;
 }
 
-.introduccion-nosotros p{
-
-}
-
 .introduccion-nosotros h2 img{
     width: 100%;
     height: 100%;
@@ -373,8 +488,9 @@ section p{
     width: 90%;
 }
 
-
-
+.card{
+    background-color: transparent;
+}
 
 /*-----------SERVICIOS------------*/
 
