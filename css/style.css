@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Poiret+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Poiret+One&display=swap');
 
 *{
     padding: 0;
@@ -18,7 +18,39 @@ body{
 }
 
 
-/*----------------HEADER-INDEX--------------*/
+/*-----------------HEADER-INDEX----------------*/
+
+/*-------------DIV-CONTENEDOR-INDEX------------*/
+
+.grid-contenedor{       
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: auto auto auto;
+    grid-template-areas:
+    "logo logo logo" 
+    "header header header"    
+    "main main main" 
+    "footer footer footer"
+    ;
+}
+
+/*--------------GRID-AREAS-INDEX---------------*/
+
+.logo{
+    grid-area: logo;
+}
+
+.encabezado{    
+    grid-area: header;    
+}
+
+.contenido{
+    grid-area: main;
+}
+
+.pie{
+    grid-area: footer;
+}
 
 /*------- BARRA DE NAVEGACION Y LOGO -------*/
 
@@ -212,62 +244,147 @@ header nav ul{
 }
 }
 
-/*-----FIN BARRA DE NAVEGACION ----*/
-
-
-/*-------------DIV-CONTENEDOR-INDEX------------*/
-
-.grid-contenedor{       
-    display: grid;
-    grid-template-columns: repeat(1,1fr);
-    /*grid-template-rows: auto 1200px auto;*/
-    grid-template-areas: 
-    "header"    
-    "main"
-    "footer"
-    ;
-
-}
-
-/*--------------GRID-AREAS-INDEX--------------*/
-
-.encabezado{    
-    grid-area: header;    
-}
-
-.contenido{
-    grid-area: main;
-}
-
-.introduccion{
-    text-decoration: none;
-    color: white;
-}
-
-.pie{
-    grid-area: footer;
-}
-
+/*-----FIN BARRA DE NAVEGACION -------*/
 
 /*-------------MAIN-INDEX--------------*/
 
-.contenido{
-    margin-bottom: 50px;
-}
+
 
 .hero{    
-    margin: 50px;
+    margin-bottom: 40px;
+    margin-top: 40px;    
     display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
 }
 
-.hero img{   
-    width: 100%;
+.hero h1{
+    font-family: 'Anton', sans-serif;
+    color: white;     
+}
+.hero h2{
+    font-family: 'Anton', sans-serif;
+    color: white;  
 }
 
-.introduccion{    
+.hero h3{
+    font-family: 'Anton', sans-serif;
+    color: white;  
+}
 
+@media (max-width: 1990px){
+    .hero h1{       
+        font-size: 200px;    
+    }
+    .hero h2{  
+        font-size: 300px;
+    }
+    .hero h3{  
+        font-size: 130px;
+    }
+}
+
+@media (max-width: 1300px){
+    .hero h1{       
+        font-size: 200px;    
+    }
+    .hero h2{  
+        font-size: 300px;
+    }
+    .hero h3{  
+        font-size: 130px;
+    }
+}
+
+
+@media (max-width: 1199px){
+    .hero h1{       
+        font-size: 200px;    
+    }
+    .hero h2{  
+        font-size: 300px;
+    }
+    .hero h3{  
+        font-size: 130px;
+    }
+}
+
+@media (max-width: 1000px){
+    .hero h1{       
+        font-size: 180px;    
+    }
+    .hero h2{  
+        font-size: 280px;
+    }
+    .hero h3{  
+        font-size: 110px;
+    }    
+}
+
+@media (max-width: 900px){
+    .hero h1{       
+        font-size: 140px;    
+    }
+    .hero h2{  
+        font-size: 240px;
+    }
+    .hero h3{  
+        font-size: 80px;
+    }
+}
+
+@media (max-width: 760px){
+    .hero h1{       
+        font-size: 130px;    
+    }
+    .hero h2{  
+        font-size: 200px;
+    }
+    .hero h3{  
+        font-size: 70px;
+    }
+}
+
+@media (max-width: 600px){
+    .hero h1{       
+        font-size: 100px;    
+    }
+    .hero h2{  
+        font-size: 130px;
+    }
+    .hero h3{  
+        font-size: 60px;
+    }
+}
+
+@media (max-width: 480px){
+    .hero h1{       
+        font-size: 80px;    
+    }
+    .hero h2{  
+        font-size: 110px;
+    }
+    .hero h3{  
+        font-size: 50px;
+    }
+}
+
+@media (max-width: 355px){
+    .hero h1{       
+        font-size: 50px;    
+    }
+    .hero h2{  
+        font-size: 80px;
+    }
+    .hero h3{  
+        font-size: 30px;
+    }
+}
+
+.introduccion{       
+    color: white;  
+    width: 100%;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -275,45 +392,37 @@ header nav ul{
 }
 
 
-section h2{
+.introduccion section h2{
     margin: 10px;    
 }
 
 section p{
-    /*padding: 25px;*/
+    padding: 25px;
     width: 90%;    
-    font-size: 20px;
-    text-align: center;   
+    font-size: 20px;          
 }
 
 .carousel{    
-    width: 300px;
+    width: 350px;
+    margin-bottom: 30px;
 }
 
-@media (min-width: 760px){
-    .hero img{
-        width: 70%;
-    }
-    .hero{    
-        margin: 100px;          
-    }
-}
 
 @media (min-width: 760px){ 
     .carousel{    
-        width: 350px;
+        width: 500px;
     }
 }
 
 @media (min-width: 860px){ 
     .carousel{    
-        width: 400px;
+        width: 600px;
     }
 }
 
 @media (min-width: 960px){ 
     .carousel{    
-        width: 500px;
+        width: 700px;
     }
 }
 
@@ -366,6 +475,8 @@ footer div img{
     color: #f7b817;
     
 }
+
+/*----------------FIN-DEL-INDEX----------------*/
 
 /*-----------------CSS-NOSOTROS----------------*/
 
@@ -528,7 +639,7 @@ section p{
 /*--------animaciones-servicios----*/
 
 .delivery{    
-    height: 270px;
+    height: auto;
     background-color: rgba(255, 255, 255, 0.199);
     background-repeat: no-repeat;
     background-size: cover;
@@ -538,6 +649,8 @@ section p{
 }
 
 .delivery h2{
+    text-align: center;
+    color: white;
     padding: 15px;
 }
 
@@ -561,7 +674,7 @@ section p{
 }
 
 .takeaway{    
-    height: 270px;
+    height: auto;
     background-color: rgba(255, 255, 255, 0.199);
     background-repeat: no-repeat;
     background-size: cover;
@@ -575,9 +688,10 @@ section p{
 }
 
 .takeaway h2{
+    text-align: center;
+    color: white;
     padding: 15px;
 }
-
 
 .takeaway div p{        
     margin: 0;
@@ -585,13 +699,12 @@ section p{
     text-align: center;    
 }
 
-
 .takeaway:hover{
     background-color: #f7b81711;
 }
 
 .ventas{    
-    height: 270px;
+    height: auto;
     background-color: rgba(255, 255, 255, 0.199);
     background-repeat: no-repeat;
     background-size: cover;
@@ -605,6 +718,8 @@ section p{
 }
 
 .ventas h2{
+    text-align: center;
+    color: white;
     padding: 15px;
 }
 
@@ -671,7 +786,6 @@ section p{
     filter: opacity(0.9);
     transform: scale(1.04);    
 }
-
 .grid-item-2{
     background-image: url(../img/foto2.png);
     background-size: cover;
@@ -684,7 +798,6 @@ section p{
     filter: opacity(0.9);
     transform: scale(1.04);
 }
-
 .grid-item-3{
     background-image: url(../img/foto3.png);
     background-size: cover;
@@ -697,7 +810,6 @@ section p{
     filter: opacity(0.9);
     transform: scale(1.04);
 }
-
 .grid-item-4{
     background-image: url(../img/foto4.png);
     background-size: cover;
@@ -710,7 +822,6 @@ section p{
     filter: opacity(0.9);
     transform: scale(1.04);
 }
-
 .grid-item-5{
     background-image: url(../img/foto5.png);
     background-size: cover;
@@ -723,7 +834,6 @@ section p{
     filter: opacity(0.9);
     transform: scale(1.04);    
 }
-
 .grid-item-6{
     background-image: url(../img/foto6.png);
     background-size: cover;
@@ -736,7 +846,6 @@ section p{
     filter: opacity(0.9);
     transform: scale(1.04);    
 }
-
 .grid-item-7{
     background-image: url(../img/foto7.png);
     background-size: cover;
@@ -749,7 +858,6 @@ section p{
     filter: opacity(0.9);
     transform: scale(1.04);    
 }
-
 .grid-item-8{
     background-image: url(../img/foto8.png);
     background-size: cover;
@@ -762,7 +870,6 @@ section p{
     filter: opacity(0.9);
     transform: scale(1.04);    
 }
-
 .grid-item-9{
     background-image: url(../img/foto9.png);
     background-size: cover;
@@ -861,6 +968,42 @@ section p{
     }
 }
 
+/*---------GRID-CONTACTO---------*/
+
+.grid-contenedor-contacto{       
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: auto auto auto;
+    grid-template-areas:    
+    "header header header"    
+    "main main main" 
+    "footer footer footer"
+    ;
+}
+
+/*--------------GRID-AREAS-INDEX---------------*/
+
+.encabezado{    
+    grid-area: header;    
+}
+
+.contenido{
+    grid-area: main;
+}
+
+.pie{
+    grid-area: footer;
+}
+
+/*-------MAIN-CONTACTO-----------*/
+
+.contenido div{
+    margin-top: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 /*------FORMULARIO-CONTACTO-------*/
 
 form{
@@ -873,15 +1016,22 @@ form{
     border-radius: 7px;
 }
 
-h2{
+.contacto h2{
     color: white;
     text-align: center;
     margin: 0;
     font-size: 30px;
     margin-bottom: 20px;
     font-family: 'Poiret One', cursive;  
+}
 
-
+.formulario{
+    color: white;
+    text-align: center;
+    margin: 0;
+    font-size: 30px;
+    margin-bottom: 20px;
+    font-family: 'Poiret One', cursive;  
 }
 
 input, textarea{
