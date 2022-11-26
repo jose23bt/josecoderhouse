@@ -389,11 +389,17 @@ header nav ul{
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    margin-bottom: 50px;    
 }
 
 
 .introduccion section h2{
     margin: 10px;    
+}
+
+pre{
+    padding: 25px;       
+    font-size: 20px;  
 }
 
 section p{
@@ -403,14 +409,13 @@ section p{
 }
 
 .carousel{    
-    width: 350px;
-    margin-bottom: 30px;
+    width: 350px;    
 }
 
 
 @media (min-width: 760px){ 
     .carousel{    
-        width: 500px;
+        width: 400px;
     }
 }
 
@@ -527,6 +532,71 @@ section p{
 }
 
 /*------------MAIN-NOSOTROS-----------*/
+
+.hero-nosotros{    
+    margin-bottom: 40px;
+    margin-top: 40px;    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.hero-nosotros h1{
+    font-family: 'Anton', sans-serif;
+    color: white; 
+    font-size: 100px;    
+}
+.hero-nosotros h2{
+    font-family: 'Anton', sans-serif;
+    color: white; 
+    font-size: 150px; 
+}
+
+.hero-nosotros h3{
+    font-family: 'Anton', sans-serif;
+    color: white; 
+    font-size: 120px; 
+}
+
+@media (max-width: 1000px){
+    .hero-nosotros h1{
+        font-size: 80px; 
+    }
+    .hero-nosotros h2{        
+        font-size: 100px; 
+    }
+    .hero-nosotros h3{ 
+        font-size: 90px; 
+    }
+}
+
+@media (max-width: 650px){
+    .hero-nosotros h1{
+        font-size: 60px; 
+    }
+    .hero-nosotros h2{        
+        font-size: 80px; 
+    }
+    .hero-nosotros h3{ 
+        font-size: 70px; 
+    }
+}
+
+@media (max-width: 430px){
+    .hero-nosotros h1{
+        font-size: 40px; 
+    }
+    .hero-nosotros h2{        
+        font-size: 50px; 
+    }
+    .hero-nosotros h3{ 
+        font-size: 50px; 
+    }
+}
+
+
+
 
 .introduccion-nosotros{
     margin: 35px;
@@ -743,21 +813,78 @@ section p{
 
 /*-----------MAIN-GALERIA-----------*/
 
-.creaciones{
+.hero-galeria{
     display: flex;
     flex-direction: column;
-    align-items: center;
-    justify-content: center;  
-    height: auto;     
+    justify-content: center;
+    align-items: center;    
+    margin: 40px;    
 }
 
-.creaciones img{  
-    margin: 25px;  
-    width: 70%;
+.hero-galeria h1{
+    font-size: 100px;
+    font-family: 'Anton', sans-serif;
+    color: white;  
 }
 
-.contenido-galeria{
-    margin: 20px;
+.hero-galeria h2{
+    font-size: 180px;
+    font-family: 'Anton', sans-serif;
+    color: white;  
+}
+
+@media (max-width: 1000px){
+    .hero-galeria h1{
+        font-size: 80px;        
+    }
+    .hero-galeria h2{       
+        font-size: 160px;    
+    }    
+}
+
+@media (max-width: 900px){
+    .hero-galeria h1{
+        font-size: 70px;        
+    }
+    .hero-galeria h2{       
+        font-size: 140px;    
+    }    
+}
+
+@media (max-width: 800px){
+    .hero-galeria h1{
+        font-size: 60px;        
+    }
+    .hero-galeria h2{       
+        font-size: 120px;    
+    }    
+}
+
+@media (max-width: 760px){
+    .hero-galeria h1{
+        font-size: 50px;        
+    }
+    .hero-galeria h2{       
+        font-size: 100px;    
+    }    
+}
+
+@media (max-width: 600px){
+    .hero-galeria h1{
+        font-size: 30px;        
+    }
+    .hero-galeria h2{       
+        font-size: 60px;    
+    }    
+}
+
+@media (max-width: 370px){
+    .hero-galeria h1{
+        font-size: 30px;        
+    }
+    .hero-galeria h2{       
+        font-size: 50px;    
+    }    
 }
 
 /*----------GRID-CONTENEDOR-GALERIA------*/
@@ -925,84 +1052,166 @@ section p{
 
 /*-----------MAIN-CONTACTO---------*/
 
-.main-contacto{
-    display: flex;
-    flex-direction: column;
-}
 
-.contacto{
+.contacto{  
+    padding: 2%;  
     display: flex;    
+    flex-direction: row;    
+    justify-content: center; 
+    align-items: flex-start;      
+}
+
+
+.mapa{      
+    display: flex;    
+    flex-direction: row;
     align-items: center;
-    justify-content: center;  
-    height: auto;     
+    justify-content: center;       
 }
 
-.contacto img{  
-    margin: 25px;  
-    width: 70%;
-}
-
-.contenido-contacto{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;    
-    text-align: center;
-    text-decoration: none;
-    color: white;    
-}
-
-.contenido-contacto p{
-    width: 80%;
-    margin: 20px;
-}
-
-@media (min-width: 760px){ 
-    .contenido-contacto{
-        display: flex;
-        flex-direction: row;
-        margin: 20px;
-        text-align: center;
-        text-decoration: none;
-        color: white;
+@media (max-width: 1000px){
+    .contacto{
+        flex-direction: column;
+        align-items: center;
     }
 }
 
-/*---------GRID-CONTACTO---------*/
-
-.grid-contenedor-contacto{       
-    display: grid;
-    grid-template-columns: repeat(3,1fr);
-    grid-template-rows: auto auto auto;
-    grid-template-areas:    
-    "header header header"    
-    "main main main" 
-    "footer footer footer"
-    ;
+@media (max-width: 1000px){
+    .mapa{         
+        flex-direction: column;            
+    }    
 }
 
-/*--------------GRID-AREAS-INDEX---------------*/
-
-.encabezado{    
-    grid-area: header;    
+.hero-contacto{
+    margin-top: 40px;
 }
 
-.contenido{
-    grid-area: main;
+.contenido-contacto{
+        display: flex;
+        flex-direction: column;        
+        text-align: center;
+        text-decoration: none;
+        color: white;        
+    }
+
+@media (min-width: 1200px){
+    .contenido-contacto{        
+        padding-left: 100px;
+        padding-right: 100px;
+    }
 }
 
-.pie{
-    grid-area: footer;
+
+
+@media (min-width: 1020px){
+    .contacto p{        
+        padding: 50px;
+        font-size: 30px;
+    }  
+}
+
+@media (min-width: 1020px){
+    .mapa p{        
+        padding: 50px;
+        font-size: 30px;
+    }  
 }
 
 /*-------MAIN-CONTACTO-----------*/
 
-.contenido div{
-    margin-top: 30px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+.contacto{
+    margin-bottom: 40px;
 }
+
+.hero-contacto h1{
+    font-family: 'Anton', sans-serif;
+    color: white;     
+}
+.hero-contacto h2{
+    font-family: 'Anton', sans-serif;
+    color: white;  
+}
+
+.hero-contacto h3{
+    font-family: 'Anton', sans-serif;
+    color: white;  
+}
+
+.direccion h4{
+    font-size: 40px;
+    font-family: 'Anton', sans-serif;
+    color: white;  
+}
+
+@media (max-width: 650px){
+    .direccion h4{       
+        font-size: 30px;    
+    }    
+}
+
+@media (max-width: 1990px){
+    .hero-contacto h1{       
+        font-size: 80px;    
+    }
+    .hero-contacto h2{  
+        font-size: 200px;
+    }
+    .hero-contacto h3{  
+        font-size: 50px;
+    }
+}
+
+@media (max-width: 800px){
+    .hero-contacto h1{       
+        font-size: 70px;    
+    }
+    .hero-contacto h2{  
+        font-size: 190px;
+    }
+    .hero-contacto h3{  
+        font-size: 40px;
+    }
+}
+
+@media (max-width: 760px){
+    .hero-contacto h1{       
+        font-size: 60px;    
+    }
+    .hero-contacto h2{  
+        font-size: 150px;
+    }
+    .hero-contacto h3{  
+        font-size: 30px;
+    }
+}
+
+@media (max-width: 650px){
+    .hero-contacto h1{       
+        font-size: 50px;    
+    }
+    .hero-contacto h2{  
+        font-size: 140px;
+    }
+    .hero-contacto h3{  
+        font-size: 30px;
+    }
+}
+
+@media (max-width: 400px){
+    .hero-contacto h1{       
+        font-size: 30px;    
+    }
+    .hero-contacto h2{  
+        font-size: 100px;
+    }
+    .hero-contacto h3{  
+        font-size: 20px;
+    }
+}
+
+iframe{       
+    width: 70%;    
+}    
 
 /*------FORMULARIO-CONTACTO-------*/
 
@@ -1014,6 +1223,13 @@ form{
     box-sizing: border-box;
     margin-top: 20px;
     border-radius: 7px;
+}
+
+@media (max-width: 650px){
+    form{       
+        width: 300px   
+    }
+    
 }
 
 .contacto h2{
@@ -1058,33 +1274,3 @@ textarea{
 #boton:hover{
     cursor: pointer;
 }
-
-@media (max-width:480px){
-    form{
-        width: 100%;
-    }
-}
-
-/*-----------direccion-------*/
-
-
-.direccion{         
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;    
-    box-sizing: border-box;
-    color: white;
-    text-align: center;
-    margin: 0;
-    font-size: 30px;
-    display: flex;    
-}
-
-.direccion div{
-    box-sizing: border-box;
-    width: 80%;
-    height: 25%;
-}
-
-
-
