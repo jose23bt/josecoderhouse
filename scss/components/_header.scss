@@ -1,0 +1,67 @@
+@import "../base/variables";
+
+.grid-contenedor {
+
+    .encabezado {
+        display: flex;
+        justify-content: center;
+        margin-top: 25px;
+        width: 100%;
+        height: 85px;
+        overflow: hidden;
+        transition-property: height;
+        transition-duration: 1s;
+
+        .encabezado:hover {
+            height: 400px;
+        }
+
+        .navbar {
+            display: flex;
+            flex-direction: column;
+            background-color: nth($colores-navbar, 2);
+            width: 80%;
+            flex-wrap: nowrap;
+            border-radius: 8px;
+
+            .menub {
+                .fa-sharp {
+                    text-align: center;
+                    font-size: 30px;
+                    color: nth($colores-navbar, 4);
+                    padding-top: 20px;
+                    padding-bottom: 20px;
+                }
+            }
+
+            .letras {
+                ul {
+                    list-style: none;
+                    display: flex;
+                    align-items: center;
+                    flex-direction: row;
+                    margin-bottom: 0px;
+                    padding-left: 0px;
+
+                    li {
+                        margin: 15px;
+                        font-size: 20px;
+
+                        a {
+                            text-decoration: none;
+                            color: nth($colores-navbar, 4);
+                            font-size: nth($font-size,2 );
+                        }
+
+                        a:hover {
+                            color: nth($colores-navbar, 1);
+                            font-size: 30.3px;
+                            transition-property: color;
+                            transition-duration: 0.8s;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

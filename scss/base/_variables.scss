@@ -1,0 +1,29 @@
+
+$colores-navbar: 
+#f7b817,
+rgba(0, 0, 0, 0.568),
+black,
+white;
+
+$font-size:
+60px,
+30px,
+20px,
+15px;
+
+$color-texto-general: rgb(255, 255, 255);
+$color-transparencias: rgba(0, 0, 0, 0.514);
+
+$fotos:(
+    tamaño: cover,
+    posicion: center,
+    repetision: no-repeat,
+    borde: 10px,
+    efecto: transform 1s ease-in-out,
+);
+
+%flex{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+};

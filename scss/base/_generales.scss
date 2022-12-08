@@ -1,0 +1,66 @@
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Poiret+One&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+}
+
+body{  
+    background-image: url(../img/fondobody2.jpg);  
+    background-repeat: no-repeat;
+    background-size:cover;    
+    background-attachment: fixed;
+    font-family: 'Poiret One', cursive;
+}
+
+.grid-contenedor{  
+    .logo{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-top: 30px;
+        .logo-vertical{
+            img{
+                height: 100%;
+                width: 100%;
+                border-radius: 40px;            
+            }    
+        }     
+        .logo-horizontal{
+            img{
+                height: 100%;
+                width: 100%;
+                border-radius: 20px;
+            }
+        }    
+    }
+
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: auto auto auto;
+    grid-template-areas:
+    "logo logo logo" 
+    "header header header"    
+    "main main main" 
+    "footer footer footer"
+    ;
+}
+
+.logo{
+    grid-area: logo;
+}
+
+.encabezado{    
+    grid-area: header;    
+}
+
+.contenido{
+    grid-area: main;
+}
+
+.pie{
+    grid-area: footer;
+}
