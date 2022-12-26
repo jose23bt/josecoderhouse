@@ -106,10 +106,10 @@
             .introduccion{
                 .titulo-intro{
                     text-align: center;
-                    font-size: nth($font-size,2 );
+                    font-size: nth($font-size,1 );
                 }
                 p{
-                    font-size: nth($font-size,3 );
+                    font-size: nth($font-size,2 );
                 }
             }
         }
@@ -343,12 +343,9 @@
 @media (max-width: 500px){
     .grid-contenedor{
         .contenido-galeria{
-            .hero{                
-                h1{       
-                    font-size: 60px;    
-                }
+            .hero{               
                 h2{  
-                    font-size: 80px;
+                    font-size: 60px;
                 }
             } 
             .grid-container{
@@ -416,7 +413,7 @@
                 }
                 .formulario{
                     form{
-                        width: 500px;
+                        width: 450px;
                     }
                 }
             }
@@ -439,7 +436,7 @@
         .contenido-contacto{
             .hero{
                 h1{       
-                    font-size: 60px;    
+                    font-size: 50px;    
                 }
                 h2{  
                     font-size: 100px;
@@ -454,7 +451,7 @@
                 }
                 .formulario{
                     form{
-                        width: 320px;
+                        width: 300px;
                     }
                 }
             }

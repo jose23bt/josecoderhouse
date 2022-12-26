@@ -360,7 +360,7 @@ body {
       width: 90%; }
 
 .grid-contenedor .pie {
-  margin-top: 30px;
+  margin-top: 70px;
   display: flex;
   flex-direction: column;
   justify-content: space-around;
@@ -438,9 +438,9 @@ body {
     font-size: 80px; }
   .grid-contenedor .contenido-index .introduccion .titulo-intro {
     text-align: center;
-    font-size: 30px; }
+    font-size: 60px; }
   .grid-contenedor .contenido-index .introduccion p {
-    font-size: 20px; } }
+    font-size: 30px; } }
 
 @media (max-width: 500px) {
   .grid-contenedor .contenido-index .hero h1 {
@@ -453,7 +453,7 @@ body {
     text-align: center;
     font-size: 30px; }
   .grid-contenedor .contenido-index .introduccion p {
-    font-size: 15px; } }
+    font-size: 20px; } }
 
 @media (max-width: 2000px) {
   .grid-contenedor .contenido-nosotros .hero h1 {
@@ -546,10 +546,8 @@ body {
     font-size: 110px; } }
 
 @media (max-width: 500px) {
-  .grid-contenedor .contenido-galeria .hero h1 {
-    font-size: 60px; }
   .grid-contenedor .contenido-galeria .hero h2 {
-    font-size: 80px; }
+    font-size: 60px; }
   .grid-contenedor .contenido-galeria .grid-container {
     grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); } }
 
@@ -579,7 +577,7 @@ body {
   .grid-contenedor .contenido-contacto .contacto p {
     font-size: 20px; }
   .grid-contenedor .contenido-contacto .contacto .formulario form {
-    width: 500px; }
+    width: 450px; }
   .grid-contenedor .contenido-contacto h4 {
     font-size: 30px; }
   .grid-contenedor .contenido-contacto .direccion .mapa p {
@@ -587,7 +585,7 @@ body {
 
 @media (max-width: 500px) {
   .grid-contenedor .contenido-contacto .hero h1 {
-    font-size: 60px; }
+    font-size: 50px; }
   .grid-contenedor .contenido-contacto .hero h2 {
     font-size: 100px; }
   .grid-contenedor .contenido-contacto .hero h3 {
@@ -595,7 +593,7 @@ body {
   .grid-contenedor .contenido-contacto .contacto p {
     font-size: 20px; }
   .grid-contenedor .contenido-contacto .contacto .formulario form {
-    width: 320px; }
+    width: 300px; }
   .grid-contenedor .contenido-contacto .direccion .mapa p {
     font-size: 20px; } }
 
